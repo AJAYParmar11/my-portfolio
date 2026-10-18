@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Portfolio | BCA Graduate</title>
+
+  <style>
+    * {
+    .profile-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 15px #00000025;
+  margin-bottom: 20px;
+}
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fc;
+      color: #263248;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    header {
+      background: #142b4d;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    nav a:hover {
+      color: #70c5ff;
+    }
+
+    /* Home */
+    .hero {
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #e3efff, #ffffff);
+    }
+
+    .profile-circle {
+      width: 105px;
+      height: 105px;
+      border-radius: 50%;
+      background: #2455a4;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 38px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: #142b4d;
+      margin-bottom: 8px;
+    }
+
+    .hero h1 span {
+      color: #2463c5;
+    }
+
+    .hero p {
+      margin: 8px 0;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2455a4;
+      color: white;
+      padding: 12px 23px;
+      border-radius: 7px;
+      text-decoration: none;
+      margin-top: 18px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .button:hover {
+      background: #142b4d;
+    }
+
+    /* Common sections */
+    section.content {
+      padding: 60px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #142b4d;
+      font-size: 30px;
+      margin-bottom: 28px;
+    }
+
+    .about-text {
+      max-width: 760px;
+      margin: auto;
+      text-align: center;
+    }
+
+    /* Cards */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      flex: 1 1 200px;
+      max-width: 320px;
+      box-shadow: 0 4px 16px #142b4d12;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #2455a4;
+      margin-bottom: 10px;
+    }
+
+    /* Contact */
+    #contact {
+      text-align: center;
+      background: #e3efff;
+    }
+
+    footer {
+      background: #142b4d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Mobile design */
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      section.content {
+        padding: 45px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">My Portfolio</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="profile.jpg" alt="My Profile Photo"
+     class="profile-photo">
+
+    <h1>Hello, I'm <span>Ajay Parmar</span></h1>
+
+    <p>BCA Graduate | Fresher | Aspiring IT Professional</p>
+
+    <p>Welcome to my personal portfolio website!</p>
+
+    <a href="#projects" class="button">View My Projects</a>
+  </section>
+
+  <section class="content" id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p class="about-text">
+      I have completed my Bachelor of Computer Applications (BCA).
+      I am looking for an opportunity to start my professional career.
+      I am interested in computer applications, office work and
+      website development. I am always ready to learn new skills.
+    </p>
+  </section>
+
+  <section class="content" id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Computer Knowledge</h3>
+        <p>Basic computer operations and file management.</p>
+      </div>
+
+      <div class="card">
+        <h3>MS Office</h3>
+        <p>Word, Excel and basic office tasks.</p>
+      </div>
+
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Learning HTML, CSS and JavaScript.</p>
+      </div>
+
+      <div class="card">
+        <h3>Typing</h3>
+        <p>Typing and data entry practice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="projects">
+    
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Personal Portfolio</h3>
+        <p>A website to introduce myself, my skills and my projects.</p>
+      </div>
+
+      <div class="card">
+        <h3>College Project</h3>
+        <p>Car sell & buy website</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>I'm interested in suitable fresher opportunities.</p>
+
+    <p>Email: ap3632184@gmail.com.</p>
+
+    <a class="button" href="mailto:ap3632184@gmail.com.">
+      Send Me an Email
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 My Portfolio | Created by Ajay <param name="" value=""></p>
+  </footer>
+
+</body>
+</html>
